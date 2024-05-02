@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="icon" type="image/png" href="assets/images/Logo.png">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="index.html">
+                <div class="logoimage"></div>
+                <span class="logoname">Image Gallery</span>
+            </a>
+            <div class="search-container">
+                <form id="searchForm">
+                    <input type="text" placeholder="Search Gallery" name="search" id="searchInput">
+                    <button type="submit"><img src="assets/icons/Search.png" width="23px"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="maincontainer">
+            <div class="leftbar">
+                <ul>
+                    <button class="leftbaritems" onclick="showView(1)"><img src="assets/icons/picture.png" width="45px">
+                        Images</button>
+                    <button class="leftbaritems" onclick="showView(2)"><img src="assets/icons/album.png"
+                            width="40px">Albums</button>
+                    <button class="leftbaritems" onclick="showView(3)"><img src="assets/icons/ADD IMAGES.png"
+                            width="40px">Add Images</button>
+                    <button class="leftbaritems" onclick="showView(4)"><img src="assets/icons/DELETE IMAGES.png"
+                            width="40px">Delete Images</button>
+                </ul>
+            </div>
+            <div class="view" id="view1">
+                <div class="full-img" id="fullimgbox">
+                    <img src="assets/images/Pictures/image1.jpg" id="fullimg">
+                    <span onclick="closefullimg()">x</span>
+                    <div class="navigation">
+                        <img src="assets/icons/back.png" style="margin-left: 1%;" onclick="prevImage()" />
+                        <img src="assets/icons/next.png" style="margin-left: 89%;" onclick="nextImage()" />
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="assets/images/Pictures/image1.jpg" id="land,nature" onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image2.jpg" id="cars,car,vehical"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image3.jpg" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image4.png" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image5.jpg" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image6.png" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image7.jpeg" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image8.png" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image9.jpeg" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image10.png" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image11.jpg" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image12.png" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image13.jpeg" id="games,game,gaming,valorant"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image14.jpg" id="games,game,gaming,halo"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image15.jpg" id="joker" onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image16.jpeg" id="games,game,gaming,ark"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image17.jpeg" id="games,game,gaming"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image18.png" id="games,game,gaming,sunset"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image19.jpg" id="car,cars,mustang"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image20.jpg" id="car,cars,mustang"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image21.jpg" id="car,cars,mustang"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image22.jpg" id="car,cars,mustang"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image23.png" id="car,cars,lambogini"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image24.png" id="car,cars,ferrari"
+                            onclick="openfullimg(this.src)">
+                        <img src="assets/images/Pictures/image25.png" id="car,cars,lambogini"
+                            onclick="openfullimg(this.src)">
+                    </div>
+                </div>
+            </div>
+            <div class="view2" id="view2" style="display: none;">
+                <div class="view2card-container">
+                    <div class="view2card">
+                        <a href="#" id="games">
+                            <div class="gallery">
+                                <img src="assets/images/Pictures/image3.jpg" alt="" />
+                                <img src="assets/images/Pictures/image5.jpg" alt="" />
+                                <img src="assets/images/Pictures/image6.png" alt="" />
+                                <img src="assets/images/Pictures/image11.jpg" alt="" />
+                                <img src="assets/images/Pictures/image13.jpeg" alt="" />
+                                <img src="assets/images/Pictures/image16.jpeg" alt="" />
+                                <img src="assets/images/Pictures/image14.jpg" alt="" />
+                            </div>
+                        </a>
+                        <a href="#" id="cars">
+                            <div class="gallery2">
+                                <img src="assets/images/Pictures/image19.jpg" alt="" />
+                                <img src="assets/images/Pictures/image20.jpg" alt="" />
+                                <img src="assets/images/Pictures/image21.jpg" alt="" />
+                                <img src="assets/images/Pictures/image22.jpg" alt="" />
+                                <img src="assets/images/Pictures/image23.png" alt="" />
+                                <img src="assets/images/Pictures/image24.png" alt="" />
+                                <img src="assets/images/Pictures/image25.png" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="view3" id="view3" style="display: none;">
+                <div class="view2card-container">
+                    <div class="view2card">
+                        <div class="imageadd">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view4" id="view4" style="display: none;">
+                <div class="view2card-container">
+                    <div class="view2card">
+                        <div class="imagedelete">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/script.js"></script>
+</body>
+
+</html>
